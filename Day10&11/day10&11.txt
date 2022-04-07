@@ -1,0 +1,71 @@
+1) Sorting Arithmetic Computation Problem
+
+read -p "Enter 1st number: " a
+read -p "Enter 2nd number: " b
+read -p "Enter 3rd number: " c
+echo ""
+echo "Dictionary"
+declare -A res
+p=$(($a + $b * $c))
+res+=( [p]=$p )
+q=$(($a * $b + $c))
+res+=( [q]=$q )
+r=$(($c + $a / $b))
+res+=( [r]=$r )
+s=$(($a % $b + $c))
+res+=( [s]=$s )
+
+echo "$a + $b * $c = ${res[p]}"
+echo "$a * $b + $c = ${res[q]}"
+echo "$c + $a / $b = ${res[r]}"
+echo "$a % $b + $c = ${res[s]}"
+echo ""
+echo "Array"
+declare -a arr
+arr+=( ${res[p]} )
+arr+=( ${res[q]} )
+arr+=( ${res[r]} )
+arr+=( ${res[s]} )
+
+echo ${arr[@]}
+echo ""
+sort_desc=$(printf '%s ' "${arr[@]}" | sort -r)
+echo "Descending order: $sort_desc"
+
+sort_asc=$(printf '%s ' "${arr[@]}" | sort)
+echo "Ascending order: $sort_asc"
+
+
+2) Flip Coin Simulation Problem
+
+target=21
+min_diff=2
+headcount=0
+tailcount=0
+while [ 1 ]
+do
+    flip=$(($RANDOM % 2 + 1))
+    if [ $flip -eq 1 ]
+    then
+    echo Heads
+    headcount=`expr $headcount + 1`
+    else
+    echo Tails
+    tailcount=`expr $tailcount + 1`
+    fi
+
+    diff=$(( headcount - tailcount ))
+    if(( headcount == target && diff >= min_diff ))
+    then
+        echo "Heads won by $diff points"
+        break
+    elif(( tailcount == target && ${diff} >= min_diff ))
+    then
+         echo "Tails won by ${diff} points"
+         break
+    fi
+    
+done
+
+echo "No.of times Heads occured: $headcount"
+echo "No.of times Tails occured: $tailcount"

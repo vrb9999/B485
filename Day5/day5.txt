@@ -1,0 +1,247 @@
+1) Use Random Function (( RANDOM )) to get Single Digit
+$ echo $(( $RANDOM % 10 ))
+4
+
+2) Use Random to get Dice Number between 1 to 6
+$ echo $(( $RANDOM % 6 + 1 ))
+5
+
+3) Add two Random Dice Number and Print the Result
+x=$(( $RANDOM % 6 +1 ))
+y=$(( $RANDOM % 6 +1 ))
+
+echo $(( $x + $y ))
+
+$ bash dice.sh
+7
+
+
+4) Write a program that reads 5 Random 2 Digit values , then find their sum and the average
+a=$(( $RANDOM % 99 + 10 ))
+b=$(( $RANDOM % 99 + 10 ))
+c=$(( $RANDOM % 99 + 10 ))
+d=$(( $RANDOM % 99 + 10 ))
+e=$(( $RANDOM % 99 + 10 ))
+
+x=$(( $a + $b + $c + $d + $e))
+y=$((x / 5))
+
+echo "Sum = $x"
+echo "AVG = $y"
+
+$ bash rand2d.sh
+Sum = 353
+AVG = 70
+
+
+5) Unit Conversion
+inch=42
+onefeet=0.0833
+a=`echo $onefeet $inch | awk '{ print $1*$2 }'`
+echo $a
+
+l=60
+b=40
+meter=0.3048
+a=`echo $meter $l $b | awk '{ print $1*$2 meters }{ print $1*$3 meters}'`
+echo $a
+
+
+6) Leap year or not
+read -p "Enter year: " x
+
+if [[ $(( x % 400 )) == 0 || $(( x % 100)) != 0 && $(( x % 4 )) == 0 ]]
+then
+   echo "Leap year"
+else
+   echo "Not leap year"
+fi
+
+$ bash leap.sh
+Enter year: 2003
+Not leap year
+
+$ bash leap.sh
+Enter year: 2000
+Leap year
+
+
+7) Coin flip
+flip=$(($RANDOM % 2 + 1))
+
+if [ $flip -eq 1 ]
+then
+echo Heads
+else
+echo Tails
+fi
+
+$ bash flip.sh
+Tails
+
+$ bash flip.sh
+Heads
+
+
+8) Read a single digit number and write the number in word using case
+read -p "Enter number below 10: " n
+case $n in
+   0) echo zero ;;
+   1) echo one ;;
+   2) echo two ;;
+   3) echo three ;;
+   4) echo four ;;
+   5) echo five ;;
+   6) echo six ;;
+   7) echo seven ;;
+   8) echo eight ;;
+   9) echo nine ;;
+   *) echo invalid input;;
+esac
+
+
+9) Max & min of 5 random numbers
+a=$(( $RANDOM % 999 + 100 ))
+b=$(( $RANDOM % 999 + 100 ))
+c=$(( $RANDOM % 999 + 100 ))
+d=$(( $RANDOM % 999 + 100 ))
+e=$(( $RANDOM % 999 + 100 ))
+echo $a $b $c $d $e
+x=`echo $a $b $c $d $e | awk '{ print max(max(max(max($1, $2), $3), $4), $5) } 
+function max(m, n) {
+	return m > n ? m : n
+}'`
+y=`echo "Min " $a $b $c $d $e | awk '{ print min(min(min(min($1, $2), $3), $4), $5) } 
+function min(m, n) {
+	return m < n ? m : n
+}'`
+echo "Max num: $x"
+echo "Min num: $y"
+
+
+10)Equation max min
+read -p "Enter 1st num: " x
+read -p "Enter 2nd num: " y
+read -p "Enter 3rd num: " z
+
+a=$(($x + $y * $z))
+b=$(($x % $y + $z))
+c=$(($x + $y / $z))
+d=$(($x * $y + $z))
+
+echo $a $b $c $d
+
+p=`echo $a $b $c $d | awk '{ print max(max(max($1, $2), $3), $4) } 
+function max(m, n) {
+	return m > n ? m : n
+}'`
+q=`echo "Min " $a $b $c $d | awk '{ print min(min(min($1, $2), $3), $4) } 
+function min(m, n) {
+	return m < n ? m : n
+}'`
+
+echo "Max num: $p"
+echo "Min num: $q"
+
+11) Word using if...else
+read -p "Enter number below 10: " n
+
+if [ $n -eq 0 ]
+then
+	echo zero
+elif [ $n -eq 1 ]
+then
+	echo one
+elif [ $n -eq 2 ]
+then
+	echo two
+elif [ $n -eq 3 ]
+then
+	echo three
+elif [ $n -eq 4 ]
+then
+	echo four
+elif [ $n -eq 5 ]
+then
+	echo five
+elif [ $n -eq 6 ]
+then
+	echo six
+elif [ $n -eq 7 ]
+then
+	echo seven
+elif [ $n -eq 8 ]
+then
+	echo eight
+elif [ $n -eq 9 ]
+then
+	echo nine
+else
+	echo invalid
+fi
+
+12) Week day
+read -p "Enter number: " n
+case $n in
+	1) echo sun ;;
+	2) echo mon ;;
+	3) echo tue ;;
+	4) echo wed ;;
+	5) echo thu ;;
+	6) echo fri ;;
+	7) echo sat ;;
+	*) echo invalid input;;
+esac
+
+13) Unit Conversion
+a=3.28
+b=12.00
+c=39.37
+
+read -p "input format(f/in/m): " input
+read -p "value: " value
+read -p "output format(f/in/m): " output
+
+if [ $input == $output ]
+then
+	echo "$value $input = $value $input"
+elif [ $input == "f" ]
+then
+	if [ $output == "in" ]
+	then
+		echo "$value $input = $(( $value * $b )) $output"
+	elif [ $output == "m" ]
+	then
+		echo "$value $input = $(( $value / $a )) $output"
+	fi
+elif [ $input == "in" ]
+then	
+	if [ $output == "f" ]
+	then
+		echo "$value $input = $(( $value / $b )) $output"
+	elif [ $output == "m" ]
+	then
+		echo "$value $input = $(( $value / $c )) $output"
+	fi
+elif [ $input == "m" ]
+then	
+	if [ $output == "in" ]
+	then
+		echo "$value $input = $(( $value * $c )) $output"
+	elif [ $output == "f" ]
+	then
+		echo "$value $input = $(( $value * $a )) $output"
+	fi
+else
+	echo invalid
+fi
+
+
+
+
+
+
+
+
+
+

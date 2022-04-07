@@ -1,0 +1,411 @@
+Vinay Biradar@VRB MINGW64 ~/Documents/BC
+$ ls
+Helloworld.java  a/  aaa.txt  abc/  ac  b.txt  batch485/  bca.txt  def.txt  mmm.pdf  ppp/  tht/
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC
+$ mkdir commands
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC
+$ ls
+Helloworld.java  aaa.txt  ac     batch485/  commands/  mmm.pdf  tht/
+a/               abc/     b.txt  bca.txt    def.txt    ppp/
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC
+$ cd commands/
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ ls
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ touch abc.txt def.txt ghi.txt jkl.txt
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ ls
+abc.txt  def.txt  ghi.txt  jkl.txt
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ mkdir abc
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ mv abc.txt abc
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ ls
+abc/  def.txt  ghi.txt  jkl.txt
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ cd abc
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands/abc
+$ ls
+abc.txt
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands/abc
+$ cd ..
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ mkdir def
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ mv def.txt def
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ cd def
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands/def
+$ ls
+def.txt
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands/def
+$ cd ..
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ mkdir ghi
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ mv ghi.txt ghi
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ mkdir jkl
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ mv jkl.txt jkl
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ cd jkl
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands/jkl
+$ ls
+jkl.txt
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands/jkl
+$ cd ..
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ ls
+abc/  def/  ghi/  jkl/
+
+def/:
+def.txt
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ ls abc abc.txt
+ls: cannot access 'abc.txt': No such file or directory
+abc:
+abc.txt
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ ls def def.txt
+ls: cannot access 'def.txt': No such file or directory
+def:
+def.txt
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ ls def
+def.txt
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ ls ghi
+ghi.txt
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ ls
+abc/  def/  ghi/  jkl/
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ mkdir terminal
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ ls
+abc/  def/  ghi/  jkl/  terminal/
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ echo "hello"
+hello
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ ls
+abc/  def/  ghi/  jkl/  terminal/
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ env
+USERDOMAIN=DESKTOP-O414799
+OS=Windows_NT
+COMMONPROGRAMFILES=C:\Program Files\Common Files
+PROCESSOR_LEVEL=6
+PSModulePath=C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
+CommonProgramW6432=C:\Program Files\Common Files
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+MSYSTEM_CARCH=x86_64
+DISPLAY=needs-to-be-defined
+HOSTNAME=DESKTOP-O414799
+PUBLIC=C:\Users\Public
+CONFIG_SITE=/etc/config.site
+EXEPATH=C:\Program Files\Git
+MSYSTEM_CHOST=x86_64-w64-mingw32
+USERNAME=VINAY BIRADAR
+ChocolateyInstall=C:\ProgramData\chocolatey
+JAVA_HOME=C:\Program Files\Java
+LOGONSERVER=\\DESKTOP-O414799
+PROCESSOR_ARCHITECTURE=AMD64
+LOCALAPPDATA=C:\Users\VINAY BIRADAR\AppData\Local
+COMPUTERNAME=DESKTOP-O414799
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+!::=::\
+SYSTEMDRIVE=C:
+USERPROFILE=C:\Users\VINAY BIRADAR
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+SYSTEMROOT=C:\WINDOWS
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-O414799
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+MINGW_PACKAGE_PREFIX=mingw-w64-x86_64
+PWD=/c/Users/VINAY BIRADAR/Documents/bridge lab/commands
+SSH_ASKPASS=/mingw64/bin/git-askpass.exe
+HOME=/c/Users/VINAY BIRADAR
+TMP=/tmp
+LC_CTYPE=en_US.UTF-8
+TERM_PROGRAM=mintty
+TERM_PROGRAM_VERSION=3.5.2
+MSYSTEM_PREFIX=/mingw64
+OneDrive=C:\Users\VINAY BIRADAR\OneDrive
+PROCESSOR_REVISION=4e03
+FPS_BROWSER_USER_PROFILE_STRING=Default
+TMPDIR=/tmp
+SynaProgDir=Synaptics\SynTP
+NUMBER_OF_PROCESSORS=4
+ProgramW6432=C:\Program Files
+java=C:\Program Files (x86)\Java\jdk1.8.0_25\bin\
+COMSPEC=C:\WINDOWS\system32\cmd.exe
+APPDATA=C:\Users\VINAY BIRADAR\AppData\Roaming
+SHELL=/usr/bin/bash
+TERM=xterm
+IntelliJ IDEA Community Edition=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\bin;
+WINDIR=C:\WINDOWS
+MINGW_CHOST=x86_64-w64-mingw32
+ProgramData=C:\ProgramData
+SHLVL=1
+PLINK_PROTOCOL=ssh
+ACLOCAL_PATH=/mingw64/share/aclocal:/usr/share/aclocal
+PROGRAMFILES=C:\Program Files
+MANPATH=/mingw64/local/man:/mingw64/share/man:/usr/local/man:/usr/share/man:/usr/man:/share/man
+ORIGINAL_TEMP=/tmp
+ORIGINAL_TMP=/tmp
+ALLUSERSPROFILE=C:\ProgramData
+TEMP=/tmp
+DriverData=C:\Windows\System32\Drivers\DriverData
+MSYSTEM=MINGW64
+MINGW_PREFIX=/mingw64
+SESSIONNAME=Console
+ProgramFiles(x86)=C:\Program Files (x86)
+PATH=/c/Users/VINAY BIRADAR/bin:/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/mingw64/bin:/usr/bin:/c/Users/VINAY BIRADAR/bin:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files/Common Files/Oracle/Java/javapath:/c/ProgramData/Oracle/Java/javapath:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/Program Files/MATLAB/MATLAB Production Server/R2015a/runtime/win64:/c/Program Files/MATLAB/MATLAB Production Server/R2015a/bin:/c/Program Files/MATLAB/MATLAB Production Server/R2015a/polyspace/bin:/c/WINDOWS/System32/OpenSSH:/c/Program Files/Java/jdk1.8.0_271/bin:/c/Program Files/Java/jre1.8.0_271/bin:/c/Program Files/nodejs:/c/ProgramData/chocolatey/bin:/c/Users/VINAY BIRADAR/AppData/Local/Microsoft/WindowsApps:/c/Users/VINAY BIRADAR/AppData/Roaming/npm:/c/Users/VINAY BIRADAR/AppData/Local/Programs/Microsoft VS Code/bin:/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2021.3.3/bin:/usr/bin/vendor_perl:/usr/bin/core_perl
+PS1=\[\033]0;$TITLEPREFIX:$PWD\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$
+HOMEDRIVE=C:
+ChocolateyLastPathUpdate=132679010127045202
+PKG_CONFIG_PATH=/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig
+INFOPATH=/usr/local/info:/usr/share/info:/usr/info:/share/info
+HOMEPATH=\Users\VINAY BIRADAR
+ORIGINAL_PATH=/mingw64/bin:/usr/bin:/c/Users/VINAY BIRADAR/bin:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files/Common Files/Oracle/Java/javapath:/c/ProgramData/Oracle/Java/javapath:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/Program Files/MATLAB/MATLAB Production Server/R2015a/runtime/win64:/c/Program Files/MATLAB/MATLAB Production Server/R2015a/bin:/c/Program Files/MATLAB/MATLAB Production Server/R2015a/polyspace/bin:/c/WINDOWS/System32/OpenSSH:/c/Program Files/Java/jdk1.8.0_271/bin:/c/Program Files/Java/jre1.8.0_271/bin:/c/Program Files/nodejs:/c/ProgramData/chocolatey/bin:/c/Users/VINAY BIRADAR/AppData/Local/Microsoft/WindowsApps:/c/Users/VINAY BIRADAR/AppData/Roaming/npm:/c/Users/VINAY BIRADAR/AppData/Local/Programs/Microsoft VS Code/bin:/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2021.3.3/bin
+_=/usr/bin/env
+OLDPWD=/c/Users/VINAY BIRADAR/Documents/bridge lab/commands/jkl
+
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ USER
+bash: USER: command not found
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ $USER
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ echo $USER
+
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ echo $HOME
+/c/Users/VINAY BIRADAR
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ ECHO $users
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ echo $USERDOMAIN
+DESKTOP-O414799
+
+Append Current Data To All Log Files Name Which As Extension .log from folder
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ ls
+abc/  def/  ghi/  jkl/  terminal/
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ touch abc.log.1
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ ls
+abc/  abc.log.1  def/  ghi/  jkl/  terminal/
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ echo abc-"`date+"+%d-%m-%y"`"
+bash: date++%d-%m-%y: command not found
+abc-
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ echo abc.log.1-"`date+"+%d-%m-%y"`"
+bash: date++%d-%m-%y: command not found
+abc.log.1-
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ echo abc.log.1- "`date+"+%d-%m-%y"`"
+bash: date++%d-%m-%y: command not found
+abc.log.1-
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ echo abc.log.1- "` date +"+%d-%m-%y"`"
+abc.log.1- +31-03-22
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ echo abc- "` date +"+%d-%m-%y"`"
+abc- +31-03-22
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ echo def- "` date +"+%d-%m-%y"`"
+def- +31-03-22
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/commands
+$ echo jkl- "` date +"+%d-%m-%y"`"
+jkl- +31-03-22
+
+Files/Folders which has modifies 7 days ago and move it to backup folder
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC
+$ ls
+Helloworld.java  aaa.txt  abc.txt  b.txt    batch485/  commands/  ppp/
+a/               abc/     ac       backup/  bca.txt    mmm.pdf    tht/
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC
+$ mkdir bacup/
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC
+$ mv abc.txt aaa.txt backup/
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC
+$ ls -al
+total 17
+drwxr-xr-x 1 VINAY BIRADAR 197121   0 Mar 31 21:33 ./
+drwxr-xr-x 1 VINAY BIRADAR 197121   0 Mar 24 13:45 ../
+-rw-r--r-- 1 VINAY BIRADAR 197121 216 Mar 24 10:46 Helloworld.java
+drwxr-xr-x 1 VINAY BIRADAR 197121   0 Mar 22 10:51 a/
+drwxr-xr-x 1 VINAY BIRADAR 197121   0 Mar 22 11:50 abc/
+-rw-r--r-- 1 VINAY BIRADAR 197121   0 Mar 23 11:13 ac
+-rw-r--r-- 1 VINAY BIRADAR 197121   0 Mar 24 12:28 b.txt
+drwxr-xr-x 1 VINAY BIRADAR 197121   0 Mar 31 21:33 backup/
+drwxr-xr-x 1 VINAY BIRADAR 197121   0 Mar 31 21:32 bacup/
+drwxr-xr-x 1 VINAY BIRADAR 197121   0 Mar 31 13:06 batch485/
+-rw-r--r-- 1 VINAY BIRADAR 197121   0 Mar 22 11:39 bca.txt
+drwxr-xr-x 1 VINAY BIRADAR 197121   0 Mar 31 21:14 commands/
+-rw-r--r-- 1 VINAY BIRADAR 197121   0 Mar 24 12:36 mmm.pdf
+drwxr-xr-x 1 VINAY BIRADAR 197121   0 Mar 22 11:41 ppp/
+drwxr-xr-x 1 VINAY BIRADAR 197121   0 Mar 22 11:45 tht/
+
+
+Data Analysis 
+Vinay Biradar@VRB MINGW64 ~/Documents/BC
+$ ls
+Helloworld.java  abc/  b.txt    bacup/     bca.txt    mmm.pdf  tht/
+a/               ac    backup/  batch485/  commands/  ppp/
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC
+$ cd batch485/
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/batch485
+$ ls
+abc/      abc.py  abc.txt  dd/   def.txt     func.sh         xyz/
+abc.java  abc.sh  case.sh  def/  forloop.sh  linux-content/  xyz.txt
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/batch485
+$ cd linux-content/
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/batch485/linux-content (master)
+$ ls
+HelloWorld.class  README.md   data.csv     linux_chit_sheet.pdf
+HelloWorld.java   access.log  forLoop.sh*  linux_problem_sheet.pdf
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/batch485/linux-content (master)
+$ cat data.csv
+Id EmployeeName JobTitle        BasePay OvertimePay OtherPay TotalPay TotalPayBenefits
+1  NATHANIEL    GM              167411  0           400184   567595   567595
+2  GARY         CAPTAIN         155966  245131      137811   538909   538909
+3  ALBERT       CAPTAIN         212739  106088      16452    335279   335279
+4  CHRISTOPHER  MECHANIC        77916   56120       198306   332343   332343
+5  PATRICK      DEPUTYCHIEF     134401  9737        182234   326373   326373
+6  DAVID        ASSTDEPUTY      118602  8601        189082   316285   316285
+7  ALSON        BATTALIONCHIEF  92492   89062       134426   315981   315981
+8  DAVID        DEPUTYDIRECTOR  256576  0           51322    307899   307899
+10 JOANNE       CHIEF           285262  0           17115    302377   302377
+12 PATRICIA     CAPTAIN         99722   87082       110804   297608   297608
+13 EDWARD       EXECUTIVE       294580  0           0        294580   294580
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/batch485/linux-content (master)
+$ cat data.csv | awk '{print $2 "   "$7}'
+EmployeeName   TotalPay
+NATHANIEL   567595
+GARY   538909
+ALBERT   335279
+CHRISTOPHER   332343
+PATRICK   326373
+DAVID   316285
+ALSON   315981
+DAVID   307899
+JOANNE   302377
+PATRICIA   297608
+EDWARD   294580
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/batch485/linux-content (master)
+$ cat data.csv | grep CAPTAIN
+2  GARY         CAPTAIN         155966  245131      137811   538909   538909
+3  ALBERT       CAPTAIN         212739  106088      16452    335279   335279
+12 PATRICIA     CAPTAIN         99722   87082       110804   297608   297608
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/batch485/linux-content (master)
+$ cat data.csv| awk '{sum+=$4}END {print sum]'
+awk: cmd. line:1: {sum+=$4}END {print sum]
+awk: cmd. line:1:                        ^ syntax error
+awk: cmd. line:1: {sum+=$4}END {print sum]
+awk: cmd. line:1:                         ^ unexpected newline or end of string
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/batch485/linux-content (master)
+$ cat data.csv| awk '{sum+=$4}END {print sum}'
+1895667
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/batch485/linux-content (master)
+$ cat data.csv| grep CAPTAIN | awk '{sum+=$7}END {print sum}'
+1171796
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/batch485/linux-content (master)
+$ cat data.csv| grep CAPTAIN | awk '{sum+=$7}END {print sum/NR}'
+390599
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/batch485/linux-content (master)
+$ cat data.csv| awk '{print $3 "   "$5}'
+JobTitle   OvertimePay
+GM   0
+CAPTAIN   245131
+CAPTAIN   106088
+MECHANIC   56120
+DEPUTYCHIEF   9737
+ASSTDEPUTY   8601
+BATTALIONCHIEF   89062
+DEPUTYDIRECTOR   0
+CHIEF   0
+CAPTAIN   87082
+EXECUTIVE   0
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/batch485/linux-content (master)
+$ cat data.csv| awk '{um+=$4} END {print sum/NR}'
+0
+
+Vinay Biradar@VRB MINGW64 ~/Documents/BC/batch485/linux-content (master)
+$ cat data.csv| awk '{sum+=$4} END {print sum/NR}'
+157972
+
+
